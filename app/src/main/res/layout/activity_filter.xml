@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    tools:context="com.codepath.nytimessearch.Activities.FilterActivity"
+    android:id="@+id/layout">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beginDate"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/sortOrder"
+            android:text="Sort Order:"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:entries="@array/sort_order"
+            android:layout_alignBottom="@id/sortOrder"
+            />
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/buttonLayout"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/news_desk_value"
+            android:id="@+id/checkbox_text"
+            android:layout_above="@+id/buttonLayout"
+            android:layout_alignLeft="@+id/buttonLayout"
+            android:layout_alignStart="@+id/buttonLayout" />
+
+        <CheckBox android:id="@+id/checkbox_arts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="arts"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_fashion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fashion"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sports"
+            android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+
