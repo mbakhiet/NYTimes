@@ -2,7 +2,7 @@
 
 **Name of your app** is an android app that allows a user to search for articles on web using simple filters. The app utilizes [New York Times Search API](http://developer.nytimes.com/docs/read/article_search_api_v2).
 
-Time spent: **X** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
@@ -49,9 +49,10 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-I'm glad that I was able to implement the RecyclerView rather than gridview, but I'm a bit worried that I didn't accomplish as much as I could/should have in the NYTimes app (and in past assignments as well). I'd like some feedback on how I'm doing in the course if possible. Thanks!
+I'm glad that I was able to implement the RecyclerView rather than gridview, but I'm a bit worried that I didn't accomplish as much as I could/should have in the NYTimes app (and in past assignments as well). I was hoping to finish the filter feature, but I didn't finish. I'd like some feedback on how I'm doing in the course if possible. Thanks!
 
 Describe any challenges encountered while building the app.
+It took longer than expected to debug the recyclerview. I actually abandoned it and switched back to gridview, then found my mistake and switched back again. I also had trouble with filtering, as well as UI improvements. I hope I can learn to polish my apps better in the coming weeks.
 
 ## Open-source libraries used
 
