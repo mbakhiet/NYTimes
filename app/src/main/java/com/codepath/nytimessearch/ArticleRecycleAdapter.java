@@ -85,10 +85,10 @@ public class ArticleRecycleAdapter
 
         String imageUri = article.getThumbNail();
         if (!TextUtils.isEmpty(imageUri)){
-            Picasso.with(getContext()).load(imageUri).into(viewHolder.imageView);
+            Glide.with(getContext()).load(imageUri).into(viewHolder.imageView);
         }
         else{
-            Picasso.with(getContext()).load(R.drawable.newspaper).into(imageView);
+            Glide.with(getContext()).load(R.drawable.newspaper).into(imageView);
         }
     }
 
